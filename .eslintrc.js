@@ -2,11 +2,11 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 2020,
     sourceType: 'module',
-    project: './tsconfig.json'
+    project: './tsconfig.json',
   },
   plugins: ['@typescript-eslint', 'react', 'jest'],
   extends: [
@@ -15,12 +15,15 @@ module.exports = {
     'plugin:jest/recommended',
     'prettier',
     'prettier/react',
-    'prettier/@typescript-eslint'
+    'prettier/@typescript-eslint',
   ],
   env: {
     node: true,
     browser: true,
     es6: true,
-    jest: true
-  }
-}
+    jest: true,
+  },
+  rules: {
+    '@typescript-eslint/no-use-before-define': 'off',
+  },
+};
