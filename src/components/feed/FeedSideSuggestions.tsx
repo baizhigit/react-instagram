@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Paper, Typography } from '@material-ui/core';
 import { getDefaultUser } from '../../data';
 import UserCard from '../shared/UserCard';
@@ -6,7 +6,7 @@ import FollowButton from '../shared/FollowButton';
 import { useFeedSideSuggestionsStyles } from '../../styles';
 import { LoadingIcon } from '../../icons';
 
-function FeedSideSuggestions(): JSX.Element {
+function FeedSideSuggestions(): ReactElement {
   const classes = useFeedSideSuggestionsStyles();
 
   const loading = false;

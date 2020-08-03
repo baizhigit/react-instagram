@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { useLoadingScreenStyles } from '../../styles';
 import { LogoLoadingIcon } from '../../icons';
 
-function LoadingScreen(): JSX.Element {
+function LoadingScreen(): ReactElement {
   const classes = useLoadingScreenStyles();
 
   return (

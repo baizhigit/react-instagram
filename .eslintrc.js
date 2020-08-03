@@ -24,6 +24,7 @@ module.exports = {
     jest: true,
   },
   rules: {
-    '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 0,
+    'import/no-extraneous-dependencies': 0,
   },
 };

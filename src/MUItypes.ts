@@ -6,7 +6,7 @@ export type Margin = PropTypes.Margin;
 
 // export type Button = ButtonProps;
 
-export interface LoginWithFacebookTypes extends ButtonProps {
+export interface LoginWithFacebookProps extends ButtonProps {
   color: Color;
   iconColor: string;
 }

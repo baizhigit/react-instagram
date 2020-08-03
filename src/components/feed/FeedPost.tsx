@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Link } from 'react-router-dom';
 import { Typography, Button, Hidden, Divider, TextField } from '@material-ui/core';
 import Truncate from 'react-truncate';
@@ -7,7 +7,7 @@ import UserCard from '../shared/UserCard';
 import { MoreIcon, CommentIcon, ShareIcon, UnlikeIcon, LikeIcon, RemoveIcon, SaveIcon } from '../../icons';
 import { IPost } from '../../data';
 
-function FeedPost({ post }: IPost): JSX.Element {
+function FeedPost({ post }: IPost): ReactElement {
   const classes = useFeedPostStyles();
   const [showCaption, setShowCaption] = React.useState(false);
   const { id, media, likes, user, caption, comments } = post;

@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Button } from '@material-ui/core';
 import { useFollowButtonStyles } from '../../styles';
 
-type FollowButtonTypes = {
-  side: boolean;
+type FollowButtonProps = {
+  side?: boolean;
 };
 
-function FollowButton({ side }: FollowButtonTypes): JSX.Element {
+function FollowButton({ side = false }: FollowButtonProps): ReactElement {
   const classes = useFollowButtonStyles({ side });
   const [isFollowing, setFollowing] = React.useState(false);
 

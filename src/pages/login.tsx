@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Card, CardHeader, TextField, Button, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import { LoginWithFacebookTypes } from 'MUItypes';
+import { LoginWithFacebookProps } from 'MUItypes';
 import SEO from '../components/shared/Seo';
 import { useLoginPageStyles } from '../styles';
 import FacebookIconBlue from '../images/facebook-icon-blue.svg';
 import FacebookIconWhite from '../images/facebook-icon-white.png';
 
-function LoginPage(): JSX.Element {
+function LoginPage(): ReactElement {
   const classes = useLoginPageStyles();
 
   return (
@@ -67,7 +67,7 @@ function LoginPage(): JSX.Element {
   );
 }
 
-export function LoginWithFacebook({ color, iconColor, variant }: LoginWithFacebookTypes): JSX.Element {
+export function LoginWithFacebook({ color, iconColor, variant }: LoginWithFacebookProps): ReactElement {
   const classes = useLoginPageStyles();
 
   const facebookIcon = iconColor === 'blue' ? FacebookIconBlue : FacebookIconWhite;

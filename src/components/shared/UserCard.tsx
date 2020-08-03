@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Link } from 'react-router-dom';
 import { Avatar, Typography } from '@material-ui/core';
 import { useUserCardStyles } from '../../styles';
 import { defaultUser, User } from '../../data';
 
-type UserCardTypes = {
+type UserCardProps = {
   user?: User;
   avatarSize?: number;
 };
 
-function UserCard({ user = defaultUser, avatarSize = 44 }: UserCardTypes): JSX.Element {
+function UserCard({ user = defaultUser, avatarSize = 44 }: UserCardProps): ReactElement {
   const classes = useUserCardStyles({ avatarSize });
   const { username, name, profileImage } = user;
 

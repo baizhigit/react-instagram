@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Hidden } from '@material-ui/core';
 import Layout from '../components/shared/Layout';
 import FeedPost from '../components/feed/FeedPost';
@@ -9,15 +9,15 @@ import LoadingScreen from '../components/shared/LoadingScreen';
 import { useFeedPageStyles } from '../styles';
 import { LoadingLargeIcon } from '../icons';
 
-export default function FeedPage(): JSX.Element {
+export default function FeedPage(): ReactElement {
   const classes = useFeedPageStyles();
-  const [isEndOfFeed] = React.useState(false);
+  const [isEndOfFeed] = React.useState(true);
 
   const loading = false;
   if (loading) return <LoadingScreen />;
 
   return (
-    <Layout title="feed">
+    <Layout title="Feed">
       <div className={classes.container}>
         <div>
           {Array.from({ length: 5 }, () => getDefaultPost()).map((post) => (
