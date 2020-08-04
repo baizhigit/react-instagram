@@ -5,9 +5,9 @@ import App from './App';
 import theme from './theme';
 
 ReactDOM.render(
-    <MuiThemeProvider theme={theme}>
-        <CssBaseline />
-        <App />
-    </MuiThemeProvider>,
-    document.getElementById('root') as HTMLElement,
+  <MuiThemeProvider theme={theme}>
+    <CssBaseline />
+    <App />
+  </MuiThemeProvider>,
+  document.getElementById('app') as HTMLElement,
 );

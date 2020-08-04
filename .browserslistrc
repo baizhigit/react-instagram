@@ -1,0 +1,5 @@
+[development]
+> 2%
+
+[production]
+> 0.5%

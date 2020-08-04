@@ -1,4 +1,6 @@
-dist
+/dist/
+/build/
+/coverage/
 
 # Dependency directories
 node_modules/
@@ -13,11 +15,8 @@ jspm_packages/
 # Optional eslint cache
 .eslintcache
 
-# Microbundle cache
-.rpt2_cache/
-.rts2_cache_cjs/
-.rts2_cache_es/
-.rts2_cache_umd/
+# Auto-generated tag files
+tags
 
 # Yarn Integrity file
 .yarn-integrity
@@ -37,6 +36,7 @@ jspm_packages/
 !.vscode/extensions.json
 *.code-workspace
 
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
+# macOS 
+.DS_Store
+.AppleDouble
+.LSOverride

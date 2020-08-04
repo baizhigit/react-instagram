@@ -180,7 +180,7 @@ export const useSignUpPageStyles = makeStyles({
 // Navbar Component /components/shared/Navbar.js
 export const useNavbarStyles = makeStyles((theme) => ({
   appBar: {
-    background: '#ffffff',
+    backgroundColor: '#ffffff !important',
     color: '#000000',
     display: 'flex',
     alignItems: 'center',

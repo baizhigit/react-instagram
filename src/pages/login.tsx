@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import { LoginWithFacebookProps } from 'MUItypes';
 import SEO from '../components/shared/Seo';
 import { useLoginPageStyles } from '../styles';
-import FacebookIconBlue from '../images/facebook-icon-blue.svg';
-import FacebookIconWhite from '../images/facebook-icon-white.png';
+import FacebookIconBlue from '../images/fb-icon-blue.svg';
+import FacebookIconWhite from '../images/fb-icon-white.png';
 
 function LoginPage(): ReactElement {
   const classes = useLoginPageStyles();

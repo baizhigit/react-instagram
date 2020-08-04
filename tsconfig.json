@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
+    "outDir": "./build/",
     "baseUrl": "src",
     // Target latest version of ECMAScript.
-    "target": "esnext",
+    "target": "es5",
+    "module": "esnext",
     // Search under node_modules for non-relative imports.
     "moduleResolution": "node",
     // Process & infer types from .js files.

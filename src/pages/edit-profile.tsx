@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { useEditProfilePageStyles } from 'styles';
+import { useEditProfilePageStyles } from '../styles';
 
 function EditProfilePage(): ReactElement {
   useEditProfilePageStyles();
